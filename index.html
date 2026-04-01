@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuminousAgents.com | The Shining Path to Agentic AI Autonomy</title>
+    <meta name="description" content="Acquire LuminousAgents.com. The definitive brand for Autonomous AI Agents, Visual Intelligence (Multimodal) AI, and the Luminous Era of Agentic Workflows.">
+    <meta name="keywords" content="Luminous Agents, Autonomous AI, Agentic Workflows, AI Swarms, Multimodal AI, Robotic Intelligence, Agent Architecture">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-bg: #020617; /* Midnight Void */
+            --secondary-bg: #0f172a; /* Deep Nebula */
+            --accent-aurora: #22d3ee; /* Aurora Cyan */
+            --accent-solar: #facc15; /* Solar Yellow */
+            --text-main: #f1f5f9; /* Slate 100 */
+            --text-dim: #94a3b8; /* Slate 400 */
+            --success-glow: #a7f3d0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background-color: var(--primary-bg); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, .logo-text { font-family: 'Space Grotesk', sans-serif; }
+
+        /* --- Top Bar --- */
+        .top-bar {
+            background: linear-gradient(90deg, var(--accent-aurora), var(--accent-solar));
+            color: var(--primary-bg);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .top-bar a { color: var(--primary-bg); text-decoration: none; margin-left: 15px; }
+
+        /* --- Header --- */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(2, 6, 23, 0.96);
+            backdrop-filter: blur(20px);
+            padding: 22px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
+        }
+        .logo-text { font-size: 1.9rem; font-weight: 700; color: #fff; letter-spacing: -1px; }
+        .logo-text span { color: var(--accent-solar); font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 1.2rem; margin-left: 2px; }
+        nav a { color: var(--text-main); text-decoration: none; margin-left: 25px; font-weight: 600; transition: 0.3s; font-size: 0.95rem; }
+        nav a:hover { color: var(--accent-aurora); }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 160px 5% 120px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e3a8a 0%, #020617 100%);
+        }
+        .hero h1 { font-size: clamp(3.2rem, 11vw, 6rem); font-weight: 700; line-height: 1; margin-bottom: 25px; letter-spacing: -3px; }
+        .hero span { background: linear-gradient(to right, var(--accent-aurora), var(--accent-solar)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.5rem; color: var(--text-dim); max-width: 950px; margin: 0 auto 50px; font-weight: 300; }
+        
+        .cta-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 20px 50px; border-radius: 12px; font-weight: 800; text-decoration: none; transition: 0.4s; cursor: pointer; border: none; text-transform: uppercase; letter-spacing: 1px; }
+        .btn:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(34, 211, 238, 0.3); }
+        .btn-primary { background: var(--accent-aurora); color: var(--primary-bg); }
+        .btn-outline { border: 2px solid var(--accent-aurora); color: var(--accent-aurora); background: transparent; }
+
+        /* --- Ecosystem Grid --- */
+        section { padding: 130px 5%; }
+        .section-title { font-size: 3.2rem; margin-bottom: 15px; text-align: center; color: #fff; letter-spacing: -1px; }
+        .section-subtitle { text-align: center; color: var(--text-dim); margin-bottom: 70px; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .card { background: var(--secondary-bg); padding: 50px; border-radius: 20px; border: 1px solid #1e293b; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; }
+        .card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--accent-aurora), var(--accent-solar)); transform: scaleX(0); transition: 0.4s; }
+        .card:hover::before { transform: scaleX(1); }
+        .card:hover { background: #11151f; transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .card h3 { margin-bottom: 25px; color: var(--accent-aurora); font-size: 1.6rem; font-weight: 700; }
+        .card ul { list-style: none; color: var(--text-dim); }
+        .card ul li { margin-bottom: 14px; font-size: 1rem; border-bottom: 1px solid #1e293b; padding-bottom: 9px; }
+
+        /* --- Valuation Section --- */
+        .valuation-report { background: #010409; border-radius: 24px; padding: 70px; border: 1px dashed #2d3748; position: relative; }
+        .val-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 70px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 35px; }
+        table th, table td { text-align: left; padding: 20px; border-bottom: 1px solid #1e293b; font-size: 0.95rem; }
+        table th { color: var(--accent-solar); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+        table td:last-child { font-weight: 700; color: #fff; }
+
+        /* --- Fixed Bottom Bar --- */
+        .fixed-bottom {
+            position: fixed;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(15, 23, 42, 0.98);
+            border: 1px solid var(--accent-solar);
+            backdrop-filter: blur(20px);
+            padding: 18px 45px;
+            border-radius: 50px;
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            z-index: 2000;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+        }
+        .fixed-bottom a { text-decoration: none; color: white; font-weight: 600; font-size: 0.95rem; transition: 0.2s; }
+        .fixed-bottom a:hover { color: var(--accent-aurora); }
+
+        /* --- Footer --- */
+        footer { background: #010409; padding: 120px 5% 60px; border-top: 1px solid #1e293b; text-align: center; }
+        
+        @media (max-width: 992px) {
+            .val-grid { grid-template-columns: 1fr; gap: 40px; }
+            .top-bar { display: none; }
+            .section-title { font-size: 2.5rem; }
+            .fixed-bottom { width: 95%; gap: 12px; padding: 12px 20px; border-radius: 0; bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>Strategic Asset Inquiry: Dominating the Agentic Era</span>
+        <div>
+            <a href="mailto:sales@elijul.com">📧 sales@elijul.com</a>
+            <a href="https://wa.me/250788660513">💬 +250 788 660 513</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-text">Luminous<span>Agents</span></div>
+        <nav class="hide-mobile">
+            <a href="#architectures">Architectures</a>
+            <a href="#valuation">Valuation</a>
+            <a href="https://www.atom.com/name/luminousagents" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.85rem; border-radius: 8px;">Buy Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Initiate the Era of <span>Luminous Autonomy.</span></h1>
+        <p>A category-defining networked asset. LuminousAgents.com is the definitive brand for the Multi-Billion dollar shift toward autonomous multimodal agents, visual intelligence (Camera LLM), and self-orchestrating swarms.</p>
+        <div class="cta-group">
+            <a href="https://www.atom.com/name/luminousagents" class="btn btn-primary btn-aurora">Secure Protocol at ATOM.com</a>
+            <a href="#valuation" class="btn btn-outline btn-aurora">Asset Analysis</a>
+        </div>
+    </section>
+
+    <section id="architectures">
+        <h2 class="section-title">Dominant Industry Fits</h2>
+        <p class="section-subtitle">LuminousAgents targets the 2026 demand for AI that *does* rather than AI that *chats*.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Multimodal "Luminous" Vision</h3>
+                <ul>
+                    <li>Camera LLM & Visual Intelligence Agents</li>
+                    <li>Robotic Navigation & Perception</li>
+                    <li>Luminous Augmented Reality (AR) Agents</li>
+                    <li>Autonomous Surveillance Orchestration</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Agentic Workflow Swarms</h3>
+                <ul>
+                    <li>Self-Healing Enterprise Workflows</li>
+                    <li>Autonomous Code Generation & Deployment</li>
+                    <li>Multi-Agent Negotiation Swarms</li>
+                    <li>Decentralized AI Project Management</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Consumer "Companion" Agents</h3>
+                <ul>
+                    <li>Luminous Visual Assistants (Wearables)</li>
+                    <li>Personal Agent Swarms (Finance, Health, Travel)</li>
+                    <li>High-Trust Private Data Management</li>
+                    <li>The "Luminous" UX of Autonomous AI</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>DAO & Blockchain Agents</h3>
+                <ul>
+                    <li>DAO Sovereign Agent Autonomy</li>
+                    <li>Autonomous Smart Contract Management</li>
+                    <li>Agentic Liquidity Provisioning</li>
+                    <li>Cross-Chain Interoperability Swarms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="valuation">
+        <div class="valuation-report">
+            <h2 class="section-title" style="text-align: left; font-size: 2.5rem; letter-spacing:-1px;">Institutional Valuation (Q1 2026)</h2>
+            <div class="val-grid" style="margin-top:45px;">
+                <div>
+                    <p><strong>LuminousAgents.com</strong> defines the 2026 shift from "Agentic Potential" to "Agentic Autonomy." The term "Luminous" describes the multimodal Visual Intelligence booming this year, while "Agents" identifies the specific active protocol. Combining a tier-1 `.com` with exact keyword alignment creates insurmountable brand authority.</p>
+                    <table>
+                        <thead>
+                            <tr><th>Brand Metric</th><th>Institutional Rating</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Category Specificity</td><td>Multimodal / Autonomous Agents</td></tr>
+                            <tr><td>2026 Relevance</td><td>Extreme (Visual AI Boom)</td></tr>
+                            <tr><td>Authority Potential</td><td>Category-Killer (Niche Unification)</td></tr>
+                            <tr><td>Pronounceability</td><td>Universal Perfect</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="background: rgba(2, 6, 23, 0.4); padding: 35px; border: 1px solid #1e293b;">
+                    <h3 style="color:var(--accent-solar); margin-bottom: 25px; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Market Comparables</h3>
+                    <table>
+                        <tr><td>AutonomousAI.com</td><td>$350,000</td></tr>
+                        <tr><td>Predict.ai</td><td>$280,000</td></tr>
+                        <tr><td>Swarms.ai</td><td>$110,000</td></tr>
+                        <tr style="color:var(--accent-aurora); font-weight: 800; font-size:1.2rem;">
+                            <td>Acquisition Target</td>
+                            <td>$XX,XXX - $XXX,XXX</td>
+                        </tr>
+                    </table>
+                    <p style="font-size: 0.75rem; color: #4b5563; margin-top: 15px;">*Verified comparable sector sales data (2025-2026)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center; border-bottom: 1px solid #1e293b; background: #010409;">
+        <h2 class="section-title">Thesis of Autonomy</h2>
+        <p style="max-width: 900px; margin: 0 auto 60px; color: var(--text-dim); font-size: 1.3rem; font-weight:300;">
+            In the 2026 AI economy, <strong>Visual Intelligence is the gateway to Agentic Autonomy.</strong> LuminousAgents.com allows a startup to immediately capture the concept of AI that is both "Luminous" (seeing) and "Agentic" (doing), skipping years of market education.
+        </p>
+        <a href="mailto:sales@elijul.com" class="btn btn-outline btn-aurora">Request Information Dossier</a>
+    </section>
+
+    <section id="contact" style="text-align: center; background: #010409;">
+        <h2 class="section-title">Institutional Acquisition Inquiry</h2>
+        <div style="margin: 60px 0;">
+            <p style="color:var(--text-dim); text-transform: uppercase; letter-spacing: 3px; font-size:0.8rem;">Authorized Brokerage Agent:</p>
+            <h2 style="color: var(--accent-solar); margin: 20px 0; font-size: 3rem; letter-spacing:-1.5px;">sales@elijul.com</h2>
+            <p style="color:var(--text-dim)">Confidential Transfer Protocols via Atom.com or Escrow.com</p>
+        </div>
+        <a href="https://wa.me/250788660513" class="btn whatsapp-btn" style="background:#25D366; color:white; border-radius: 50px; text-transform:none; gap:10px; display:inline-flex; align-items:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" height="20" width="20"> Network Inquiry: +250 788 660 513</a>
+    </section>
+
+    <footer>
+        <p style="color:var(--accent-solar); font-weight: 700; letter-spacing: 2px;">LUMINOUS AGENTS ACQUISITION PORTAL</p>
+        <p style="font-size: 0.85rem; color: #4b5563; margin-top: 25px;">&copy; 2026 Secured Authority of the EliJul Group Premium Portfolio.</p>
+    </footer>
+
+    <div class="fixed-bottom">
+        <span style="font-family:'Space Grotesk'; font-weight:700; color:#fff; letter-spacing: -1px; font-size: 1.1rem;">Luminous<span>Agents</span>.com</span>
+        <span style="color:#1e293b;">|</span>
+        <a href="mailto:sales@elijul.com" style="text-decoration:none;">Direct Offer</a>
+        <span style="color:#1e293b;">|</span>
+        <a href="https://www.atom.com/name/luminousagents" class="btn btn-primary btn-aurora" style="padding: 10px 30px; font-size: 0.85rem; border-radius: 8px;">🛒 SECURE NOW</a>
+    </div>
+
+</body>
+</html>
